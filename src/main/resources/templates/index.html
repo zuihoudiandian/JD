@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>jd</title>
+    <link rel='stylesheet' href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:500,700&amp;display=swap'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
+</head>
+<body>
+<div class="center">
+    <form id="form">
+        <div class="segment">
+            <span id="title"><h1>最後</h1></span>
+        </div>
+        <div class="frist">
+            <label>
+                <span id="la" style="flex:2 ;display: -webkit-flex;align-items: center;justify-content: center; display: none;">也许明天,也许梦里，我重新拾起我最爱的诗，</span>
+                <input  id="url" name="url" style="flex: 5" type="text" placeholder="商品链接" />
+                <button  style="flex: 1" class="unit" id="btn" type="button"><i class="icon ion-md-checkmark"></i></button>
+            </label>
+        </div>
+
+        <div class="c">
+            <label>
+                <span style="flex: 2.1;display: -webkit-flex;align-items: center;justify-content: center;">通知微信号:</span>
+                <input style="flex: 7" name="wxId" type="text" placeholder="Server酱" />
+            </label>
+        </div>
+        <div class="b">
+            <label>
+                <span style="flex: 2.1;display: -webkit-flex;align-items: center;justify-content: center;">通知价格:</span>
+                <input  style="flex: 7" name="price" type="text" placeholder="到达此价通知微信" />
+            </label>
+        </div>
+        <div class="e">  <button class="red" id="save" type="button"><i class="icon ion-md-lock"></i>保存</button></div>
+        <div class="input-group">
+            <label>
+                <input type="text" id="queryID" name="wxId" placeholder="Server酱" />
+                <a href=""></a>
+            </label>
+            <button class="unit"  id="query"  type="button"><i class="icon ion-md-search"></i></button>
+        </div>
+    </form>
+</div>
+<div class="center"> <table id="table" class="table text-nowrap"></table></div>
+<div class="center"><a href="http://sc.ftqq.com/3.version">Server酱官网</a></div>
+<!-- partial -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery.serializeJSON/2.9.0/jquery.serializejson.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
+<script src="/js/index.js" type="application/javascript"></script>
+
+</body>
+</html>
